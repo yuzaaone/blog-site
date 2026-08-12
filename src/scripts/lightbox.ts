@@ -560,8 +560,8 @@ export const initCodeCopyButtons = () => {
     button.setAttribute('title', '已复制');
     window.setTimeout(() => {
       button.dataset.state = 'idle';
-      button.setAttribute('aria-label', '复制代码');
-      button.setAttribute('title', '复制代码');
+      button.setAttribute('aria-label', 'Copy code');
+      button.setAttribute('title', 'Copy code');
     }, 1200);
   });
 };

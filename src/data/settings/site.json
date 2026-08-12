@@ -9,7 +9,7 @@
   },
   "adminOverview": {
     "publicVisible": true,
-    "hiddenMessage": "作者暂未公开此页面。"
+    "hiddenMessage": "This page is not public."
   },
   "favicon": {
     "svg": null,

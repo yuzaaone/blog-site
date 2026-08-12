@@ -83,15 +83,15 @@ const HOME_HEAD_CRITICAL_FONT_FACES = [
   }
 ] as const satisfies readonly HomeHeadCriticalFontFace[];
 
-/* 首屏 critical CSS 只消费 readable/copy/brand 三个 role token（mono 首屏未用），
-   值经 getThemeFontStack 与全局解析一致；默认 @font-face 只保留被当前选择实际
-   引用的 family，非默认字体下不再声明（@font-face 本身不触发下载，纯去死字节）。 */
+/* Critical CSS uses only the readable, copy, and brand roles used above the
+   fold. Keep the resolved stacks consistent with global styles, and include
+   only the font faces selected by the active typography configuration. */
 const homeCriticalFontStacks = {
   readable: getThemeFontStack(typography.readable),
   copy: getThemeFontStack(typography.copy),
   brand: getThemeFontStack(typography.brand)
 };
-// 按注册表 familyName 精确匹配（而非在 CSS 栈字符串里找带引号子串），不依赖 getThemeFontStack 的引号格式。
+// Match the registered family name rather than parsing a quoted CSS font stack.
 const homeCriticalFontFamilies = new Set(
   (['readable', 'copy', 'brand'] as const)
     .map((role) => getThemeFontRegistryEntry(typography[role])?.familyName)

@@ -46,12 +46,11 @@ const footerShowCurrentYear = settings.site.footer.showCurrentYear;
 const footerCopyright = settings.site.footer.copyright;
 const showCodeLineNumbers = settings.ui.codeBlock.showLineNumbers;
 const sidebarDividerVariant = settings.ui.layout.sidebarDivider;
-// 非默认字体角色以 <html> 内联自定义属性覆盖 global.css 的 :root tokens；默认态不输出，
-// 保持 global.css 为唯一默认来源（deferGlobalStyles 异步加载路径下行内属性也不受加载顺序影响）。
+// Non-default font roles override global tokens through inline CSS variables.
+// The default case remains entirely in global.css, independent of load order.
 const typographyStyleOverride = getTypographyStyleOverride(settings.ui.typography);
-// 选中 astro-fonts-api 字体时渲染 <Font>（注入构建期生成的 @font-face 与 cssVariable）；默认态为空数组。
-// 只渲染 config 期实际注册的 cssVariable（快照来自 vite.define）：dev 下热改 ui.json 的未注册
-// 条目会让 <Font> 抛 FontFamilyNotFound 崩掉全站，此处跳过并提示重启。
+// Render only fonts registered during configuration. This avoids dev-time
+// FontFamilyNotFound errors after an unregistered typography change.
 const registeredFontCssVariables = new Set(
   String(import.meta.env.ASTRO_WHONO_FONT_CSS_VARIABLES ?? '').split(',').filter(Boolean)
 );
@@ -61,7 +60,7 @@ const typographyApiFonts = selectedApiFonts.filter((font) =>
 );
 if (import.meta.env.DEV && typographyApiFonts.length !== selectedApiFonts.length) {
   console.warn(
-    '[fonts] ui.typography 选中的字体未注册于本次启动的 fonts 配置，已跳过 <Font> 渲染；重启 dev server 生效。'
+    '[fonts] The selected typography font is not registered for this session; restart the dev server to apply it.'
   );
 }
 const canonical = (hasSiteUrl && Astro.site)
@@ -100,7 +99,7 @@ const adminUiPrefsScriptHref = isDevAdminPage
   <head>
     <script is:inline>
       (() => {
-        // 与 src/scripts/sidebar-theme.ts 保持同一主题偏好契约，避免首屏与运行时状态漂移。
+        // Keep this aligned with sidebar-theme.ts so first paint matches the runtime theme.
         const themeKey = 'theme';
         const modeKey = 'theme-mode';
         let storedMode = null;

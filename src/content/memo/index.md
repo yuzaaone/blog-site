@@ -1,80 +1,26 @@
 ---
-title: "生活小记"
-subtitle: "不曾虚度的光"
+title: "Memo"
+subtitle: "Small moments worth keeping"
 date: 2026-01-10
 draft: false
 ---
 
-时间流经我们，如同风穿过回廊。
-<br />总有一些瞬间，携带着特别的气息或光亮，短暂停留后便消散。
-<br />有些感受，无法被镜头承载，有些记忆难以被影像收藏。
-<br />也许，为瞬间的感受留下一份文字备份，正是抵抗遗忘最温柔却最有效的方式。
+Time moves through us like wind through a hallway.
 
-## 2025年记
+Some moments arrive with a particular light, linger briefly, and disappear. A short note can be a gentle way to keep them from being forgotten.
 
-### 新屋
+## A small collection
 
-搬家当晚把小灯放在地上，屋里还堆着箱子。我们用纸箱当桌子，吃了顿外卖。第二天起床才觉得正式住进来。
+### A new home
 
-### 小城远行
+On the first night, the rooms were still full of boxes. We used one as a table for dinner, and the next morning it finally felt like home.
 
-临时决定去海边小城，清晨到站，先在站前吃了热豆浆。沿堤走一圈，海风把帽子吹得东倒西歪。回来时把车票夹进钱包。
+### A walk by the water
 
-### 夜归
+An unplanned trip to a small coastal town: a quiet breakfast, a long walk along the sea wall, and a ticket tucked away in a wallet on the way home.
 
-晚上回到常走的路口，店名换了两次。雨刚停，路面反光。站了一会儿才走。
+### An old bookshop
 
-### 旧书店
+Rain sent me into a second-hand bookshop. The bell over the door kept ringing, and the owner wrapped a small essay collection in yesterday’s newspaper.
 
-下雨时躲进旧书店，门口的小铃一直响。挑了本二手散文，在店里看了几页。老板用旧报纸包书。
-
-### 烛光饭
-
-一次停电，点蜡烛吃饭。菜很简单，屋里却安静得能听见雨声。后来把备用蜡烛补齐。
-
-### 相框合影
-
-整理相册时挑两张旧照片放在同一相框里。放在窗边，早上光线刚好。路过就会多看一眼。
-
-### 久别相聚
-
-多年未见的朋友来访，一起散步到河边。聊到很晚，还是很多话没说完。临走前约好下次别隔太久。
-
-### 夜跑路
-
-转凉后开始夜跑，固定一条长街。路灯一盏盏过去，脚步声很清楚。回家后睡得踏实。
-
-> 这一年没有大事，但留下不少可以回想的瞬间。
-
-## 2024年记
-
-### 河边晚
-
-傍晚去河边坐一会儿，远处有人放音乐。风不大，水面有细碎的光。坐到天黑才回。
-<figure class="figure">
-  <img src="/images/memo/demo-memo-01.webp" alt="图注示例图片 1" />
-  <figcaption class="figure-caption">图注示例：这是图片的说明文字。</figcaption>
-</figure>
-
-### 手写信
-
-给远方朋友写了封信，用掉两张纸。写到最后才发现，很多话平时不会说。寄出前又读了一遍。
-
-### 小城旅
-
-周末去了附近小城，吃了当地早餐。带回几张明信片，贴在书桌前。那趟路短，但很舒服。
-
-## 2023年记
-
-### 初雪
-
-第一场雪下得很轻，街上很安静。站在窗前看了很久。
-
-
-### 书角落
-
-把旧书架重新刷漆，摆上常读的书。特地留了一层空位。夜里开一盏小灯坐一会儿。
-
-### 旧友再见
-
-久别的朋友聚在一起吃饭。大家都变了些，但笑起来还是熟悉。散场时心里很暖。
+> Nothing extraordinary happened, but there were many moments worth remembering.
