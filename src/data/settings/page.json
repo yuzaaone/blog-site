@@ -1,0 +1,26 @@
+{
+  "essay": {
+    "title": "Essays",
+    "subtitle": "Longer thoughts and field notes"
+  },
+  "archive": {
+    "title": "Archive",
+    "subtitle": null
+  },
+  "bits": {
+    "title": "Notes",
+    "subtitle": "Not everything needs to be a long read",
+    "defaultAuthor": {
+      "name": "Yuzaaone",
+      "avatar": "author/avatar.webp"
+    }
+  },
+  "memo": {
+    "title": null,
+    "subtitle": null
+  },
+  "about": {
+    "title": "About",
+    "subtitle": null
+  }
+}

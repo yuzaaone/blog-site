@@ -1,0 +1,13 @@
+{
+  "introLead": "Welcome to my corner of the web — a home for longer thoughts, passing notes, and work in progress.",
+  "introMore": "Explore the",
+  "introMoreLinks": [
+    "archive",
+    "tag"
+  ],
+  "showIntroLead": true,
+  "showIntroMore": true,
+  "heroPresetId": "default",
+  "heroImageSrc": null,
+  "heroImageAlt": "Yuzaaone website preview"
+}

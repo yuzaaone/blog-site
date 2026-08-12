@@ -1,0 +1,30 @@
+{
+  "title": "Yuzaaone",
+  "description": "Notes, essays, and small things from Yuzaaone.",
+  "defaultLocale": "zh-CN",
+  "footer": {
+    "startYear": 2025,
+    "showCurrentYear": true,
+    "copyright": "Yuzaaone"
+  },
+  "adminOverview": {
+    "publicVisible": true,
+    "hiddenMessage": "作者暂未公开此页面。"
+  },
+  "favicon": {
+    "svg": null,
+    "png": null,
+    "appleTouchIcon": null
+  },
+  "socialLinks": {
+    "github": "https://github.com/yuzaaone",
+    "x": null,
+    "email": null,
+    "presetOrder": {
+      "github": 1,
+      "x": 2,
+      "email": 3
+    },
+    "custom": []
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "brandTitle": "Yuzaaone",
+  "quote": "A quiet place\nfor essays, notes,\nand the little things\nworth keeping.",
+  "nav": [
+    {
+      "id": "essay",
+      "label": "Essays",
+      "ornament": "·",
+      "visible": true,
+      "order": 1
+    },
+    {
+      "id": "bits",
+      "label": "Notes",
+      "ornament": "·",
+      "visible": true,
+      "order": 2
+    },
+    {
+      "id": "memo",
+      "label": "Memo",
+      "ornament": "·",
+      "visible": true,
+      "order": 3
+    },
+    {
+      "id": "archive",
+      "label": "Archive",
+      "ornament": "·",
+      "visible": true,
+      "order": 4
+    },
+    {
+      "id": "about",
+      "label": "About",
+      "ornament": "·",
+      "visible": true,
+      "order": 5
+    }
+  ]
+}
