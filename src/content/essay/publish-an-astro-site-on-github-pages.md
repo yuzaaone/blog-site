@@ -1,40 +1,33 @@
 ---
-title: Publish an Astro Site on GitHub Pages — No Terminal Needed
-description: A calm, browser-only guide to choosing an Astro theme, publishing it with GitHub Pages, connecting a custom domain, and turning on HTTPS.
+title: Publish an Astro Site on GitHub Pages
+description: Choose an Astro theme, publishing it with GitHub Pages, connecting a custom domain, and turning on HTTPS.
 date: 2026-08-12
 badge: Guide
-tags: ["Astro", "GitHub Pages", "Custom Domain", "HTTPS"]
+tags: ["Astro", "GitHub Pages"]
 draft: false
 ---
 
 You do not need to be a developer to put a small, fast website online. With a ready-made [Astro theme](https://astro.build/themes/), GitHub’s website, and a domain name, you can publish a static site without opening a terminal.
 
-This guide follows the same path used for this site: choose a free Astro theme, open its GitHub repository, fork it into your own account, and let GitHub Pages build and publish it for you.
-
-> **What “static” means:** your pages are prepared ahead of time and served as simple files. That makes them fast, inexpensive to host, and well suited to blogs, portfolios, documentation, and personal sites.
+> **What "static" means:** your pages are prepared ahead of time and served as simple files. That makes them fast, inexpensive to host, and well suited to blogs, portfolios, documentation, and personal sites.
 
 ## Before you begin
 
 You will need:
 
-- a free [GitHub account](https://github.com/);
-- a domain name if you want a custom address, such as `blog.example.com`;
-- an Astro theme whose license allows reuse; and
-- a little patience while GitHub builds the site and DNS changes spread across the internet.
-
-For this walkthrough, all changes happen in a web browser on GitHub. GitHub Actions does the technical build work in the background.
+- A [GitHub account](https://github.com/)
+- A domain name if you want a custom address, such as `blog.example.com`. Don't worry if you don't have one, GitHub would host the site on their own domain, such as `blog.github.io`.
+- An Astro theme of your choosing.
 
 ## 1. Choose a theme you actually like
 
-Open the [Astro themes directory](https://astro.build/themes/) and use its filters to look for free themes. Open a theme’s preview and read its description. A theme built for a blog, portfolio, or documentation site will usually be easiest to adapt for that kind of writing.
+Open the [Astro themes directory](https://astro.build/themes/) and use its filters to look for free themes. Open a theme’s preview and read its description. A theme built for a blog, portfolio, or documentation site will usually be easiest to adapt.
 
 When you find one you like, click through to its GitHub repository. In this case, the starting point was the [Astro Whono theme](https://github.com/cxro/astro-whono).
 
-Before copying a theme, glance at its README and license. The README normally explains where posts, images, and site settings live. The license explains what you may do with the design.
-
 ## 2. Fork the theme into your GitHub account
 
-On the theme repository page, click **Fork** near the top-right corner. GitHub will ask where to place the copy; choose your own account and keep the suggested repository name, or give it a name you prefer.
+On the theme repository page, click **Fork** near the top-right corner. GitHub will ask where to place the copy, choose your own account and keep the suggested repository name, or give it a name you prefer.
 
 A fork is your own editable copy of the project. You can safely change its text, images, colours, and layout without changing the original creator’s work.
 
@@ -77,11 +70,11 @@ If you publish on the default GitHub Pages address, use that address. If you lat
 
 For a custom domain such as `blog.example.com`, the site lives at the domain root, so it should not keep a repository-name base path.
 
-## 6. Connect a custom domain
+## 6. Connect a custom domain (Optional)
 
-First, return to **Settings** → **Pages** in your GitHub repository. Under **Custom domain**, enter the address you want people to use—for example, `blog.example.com`—and save it.
+First, return to **Settings** → **Pages** in your GitHub repository. Under **Custom domain**, enter the address you want people to use for example, `blog.example.com` and save it.
 
-Then open the DNS controls at the company where you manage your domain. The record depends on the kind of address you choose:
+Then open the DNS control panel where you manage your domain. The record depends on the kind of address you choose:
 
 - For a subdomain such as `blog.example.com` or `www.example.com`, create a `CNAME` record that points to `your-name.github.io`.
 - For the bare domain, such as `example.com`, create the GitHub Pages `A` records listed in [GitHub’s custom-domain documentation](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site).
@@ -108,16 +101,5 @@ After the first setup, the routine is pleasantly small:
 4. Wait for the Pages workflow to finish.
 
 Your site updates automatically. The **Actions** tab is the first place to look if a change does not appear: a red mark means GitHub will show a readable log explaining which build step needs attention.
-
-## A small checklist
-
-- [ ] The theme license allows your intended use.
-- [ ] The theme repository is forked into your account.
-- [ ] A GitHub Pages workflow is committed to the repository.
-- [ ] Pages is set to use **GitHub Actions**.
-- [ ] The first deployment has a green check mark.
-- [ ] The custom domain is saved in GitHub Pages settings.
-- [ ] DNS points that domain to GitHub Pages.
-- [ ] **Enforce HTTPS** is enabled.
 
 That is the whole loop: choose a theme, make it yours, save changes on GitHub, and let GitHub Pages handle the hosting. It is a calm way to begin publishing without turning your personal website into a complicated project.
