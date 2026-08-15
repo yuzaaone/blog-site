@@ -1,6 +1,6 @@
 // This is the canonical production address. It can still be overridden for
 // previews, but the published GitHub Pages build must always know its URL.
-const rawSiteUrl = (process.env.SITE_URL ?? 'https://blog.yuzaaone.xyz').trim();
+const rawSiteUrl = (process.env.SITE_URL ?? 'https://yuzaaone.xyz').trim();
 const siteUrl = rawSiteUrl ? rawSiteUrl.replace(/\/+$/, '') : '';
 const hasSiteUrl = siteUrl.length > 0;
 const fallbackSiteUrl = 'https://example.invalid';

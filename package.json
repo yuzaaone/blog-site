@@ -10,7 +10,7 @@
   "bugs": {
     "url": "https://github.com/cxro/astro-whono/issues"
   },
-  "homepage": "https://blog.yuzaaone.xyz",
+  "homepage": "https://yuzaaone.xyz",
   "type": "module",
   "engines": {
     "node": ">=22.12.0"
